@@ -1,6 +1,6 @@
-import CatCard from '@/components/cards/cat/CatCard';
-import { mockCatCardProps } from '@/components/cards/cat/CatCard.mocks';
-import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
+import CatCard from '@components/cards/cat/CatCard';
+import { mockCatCardProps } from '@components/cards/cat/CatCard.mocks';
+import PrimaryLayout from '@components/layouts/primary/PrimaryLayout';
 import styled from 'styled-components';
 
 import { NextPageWithLayout } from './page';
