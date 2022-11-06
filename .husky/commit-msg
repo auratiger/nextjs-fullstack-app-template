@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx --no -- commitlint --edit ""
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+npx --no -- commitlint --edit "" || (cat "${DIR}/rules.txt" && exit 1)
